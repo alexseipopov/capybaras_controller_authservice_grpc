@@ -1,0 +1,2 @@
+import authservice_pb2
+import authservice_pb2_grpc
