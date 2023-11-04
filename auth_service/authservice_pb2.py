@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61uthservice.proto\x12\x0c\x61uth_service\"2\n\x0cLoginRequest\x12\x10\n\x08username\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"4\n\rLoginResponse\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0e\n\x06status\x18\x02 \x01(\x05\x32O\n\x0b\x41uthService\x12@\n\x05login\x12\x1a.auth_service.LoginRequest\x1a\x1b.auth_service.LoginResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61uthservice.proto\x12\x0c\x61uth_service\"2\n\x0cLoginRequest\x12\x10\n\x08username\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"B\n\rLoginResponse\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0e\n\x06status\x18\x02 \x01(\x05\x12\x0c\n\x04uuid\x18\x03 \x01(\t2O\n\x0b\x41uthService\x12@\n\x05login\x12\x1a.auth_service.LoginRequest\x1a\x1b.auth_service.LoginResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -23,7 +23,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_LOGINREQUEST']._serialized_start=35
   _globals['_LOGINREQUEST']._serialized_end=85
   _globals['_LOGINRESPONSE']._serialized_start=87
-  _globals['_LOGINRESPONSE']._serialized_end=139
-  _globals['_AUTHSERVICE']._serialized_start=141
-  _globals['_AUTHSERVICE']._serialized_end=220
+  _globals['_LOGINRESPONSE']._serialized_end=153
+  _globals['_AUTHSERVICE']._serialized_start=155
+  _globals['_AUTHSERVICE']._serialized_end=234
 # @@protoc_insertion_point(module_scope)
