@@ -1,0 +1,1 @@
+python -m grpc_tools.protoc -I. --python_out=./auth_service --grpc_python_out=./auth_service authservice.proto

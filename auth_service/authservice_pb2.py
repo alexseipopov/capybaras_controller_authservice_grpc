@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61uthservice.proto\x12\x0c\x61uth_service\"2\n\x0cLoginRequest\x12\x10\n\x08username\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"B\n\rLoginResponse\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0e\n\x06status\x18\x02 \x01(\x05\x12\x0c\n\x04uuid\x18\x03 \x01(\t2O\n\x0b\x41uthService\x12@\n\x05login\x12\x1a.auth_service.LoginRequest\x1a\x1b.auth_service.LoginResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61uthservice.proto\x12\x0c\x61uth_service\"2\n\x0cLoginRequest\x12\x10\n\x08username\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"B\n\rLoginResponse\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0e\n\x06status\x18\x02 \x01(\x05\x12\x0c\n\x04uuid\x18\x03 \x01(\t\"\x1c\n\x0cTokenRequest\x12\x0c\n\x04uuid\x18\x01 \x01(\t\"s\n\rTokenResponse\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0e\n\x06status\x18\x02 \x01(\x05\x12\x14\n\x0c\x61\x63\x63\x65ss_token\x18\x03 \x01(\t\x12\x12\n\nexpires_in\x18\x04 \x01(\x05\x12\x13\n\x0btime_create\x18\x05 \x01(\x05\x32\x9d\x01\n\x0b\x41uthService\x12@\n\x05login\x12\x1a.auth_service.LoginRequest\x1a\x1b.auth_service.LoginResponse\x12L\n\x11get_token_by_uuid\x12\x1a.auth_service.TokenRequest\x1a\x1b.auth_service.TokenResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -24,6 +24,10 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_LOGINREQUEST']._serialized_end=85
   _globals['_LOGINRESPONSE']._serialized_start=87
   _globals['_LOGINRESPONSE']._serialized_end=153
-  _globals['_AUTHSERVICE']._serialized_start=155
-  _globals['_AUTHSERVICE']._serialized_end=234
+  _globals['_TOKENREQUEST']._serialized_start=155
+  _globals['_TOKENREQUEST']._serialized_end=183
+  _globals['_TOKENRESPONSE']._serialized_start=185
+  _globals['_TOKENRESPONSE']._serialized_end=300
+  _globals['_AUTHSERVICE']._serialized_start=303
+  _globals['_AUTHSERVICE']._serialized_end=460
 # @@protoc_insertion_point(module_scope)
